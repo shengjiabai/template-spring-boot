@@ -1,0 +1,22 @@
+<!--#set(Map user)-->  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+${user.name}
+
+<table>
+  <!--#foreach(bookentry in user)-->
+  <tr>
+    <td>${foreach.count}</td>
+    <td>${bookentry.key}</td>
+    <td>${bookentry.value}</td>
+  </tr>
+  <!--#end-->
+</table>
+</body>
+</html>
